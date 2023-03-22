@@ -1,7 +1,7 @@
 from InquirerPy import inquirer
 import ShellyPy
 
-VPplug = ShellyPy.Shelly("***REMOVED***")
+VPplug = ShellyPy.Shelly("<ipadress-to-plug>")
 
 while(True):
     lamp_on = inquirer.select(
