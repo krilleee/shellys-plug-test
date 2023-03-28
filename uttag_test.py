@@ -1,9 +1,11 @@
 from InquirerPy import inquirer
 import ShellyPy
 import time
+import os
 
-VPplug = ShellyPy.Shelly("<ipadress-to-plug")
+VPplug = ShellyPy.Shelly("<ip-to-plug>")
 
+os.system('clear')
 while (True):
     lamp_on = inquirer.select(
         message="Vad vill du göra?:",
